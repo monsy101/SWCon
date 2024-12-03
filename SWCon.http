@@ -1,0 +1,6 @@
+@SWCon_HostAddress = http://localhost:5008
+
+GET {{SWCon_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
