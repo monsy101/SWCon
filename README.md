@@ -156,13 +156,16 @@ after installing docker which is a platform for creating, deploying, and managin
 
 we create 2 files in our project [dockerfile , docker-compose.yml]
 the docker file will have this data:
+```
 FROM mcr.microsoft.com/dotnet/aspnet:5.0 AS base
 WORKDIR /app
 EXPOSE 80
 COPY . .
 ENTRYPOINT ["dotnet", "YourApiProjectName.dll"]
+```
 
 and the docker-compose.yml will have:
+```
 version: '3.8'
 services:
   sqlserver:
@@ -180,7 +183,7 @@ services:
       ConnectionStrings__DefaultConnection: "Server=sqlserver;Database=AdventureWorks;User Id=sa;Password=YourStrong@Passw0rd;"
     ports:
       - "8081:8080"
-
+```
 ### NOTE THAT YOU HAVE TO DOUBLE CHECK THE PORTS USED OR IT WILL NOT WORK
 
 after setting both files we then run the command: 
@@ -197,6 +200,7 @@ after installing jenkins, going to the hosted webpage you will be able to access
 selecting pipeline and adding you github information to it will make it connected to your github repo 
 after that commit all changes to git hub you can then you can start building for your new pipeline 
 first create a Jenkinsfile in your project with the data:
+```
 pipeline {
   agent any
   stages {
@@ -223,3 +227,4 @@ pipeline {
     }
   }
 }
+```
