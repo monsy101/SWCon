@@ -155,3 +155,4 @@ D:\gam3aa\SWCon\obj\Debug\net9.0\ref\SWCon.dll
 D:\gam3aa\SWCon\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\gam3aa\SWCon\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\gam3aa\SWCon\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\gam3aa\SWCon\obj\Debug\net9.0\SWCon.sourcelink.json
